@@ -5,8 +5,10 @@ class Slit < Formula
   sha256 "18f254896fdf537503729ea6b9e0676ffc75a08be58a625e45f9e0d3afbb0919"
   license "CC0-1.0"
 
+  depends_on :linux
+
   def install
-    bin.install "slit"
+    bin.install "bin/slit"
   end
 
   test do
